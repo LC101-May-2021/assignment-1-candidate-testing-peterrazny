@@ -59,10 +59,8 @@ function gradeQuiz(candidateAnswers) {
 
     console.log("Your answer was: " + candidateAnswers[i]);
     console.log("The correct answer was: " + correctAnswers[i]);
-    candidateAnswers[i] = candidateAnswers[i].toLowerCase();
-    correctAnswers[i] = correctAnswers[i].toLowerCase();
       
-      if(candidateAnswers[i] == correctAnswers[i]) {
+      if(candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
         console.log("You answered this correctly!");
         numberCorrect++;
     }
